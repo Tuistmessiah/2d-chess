@@ -1,0 +1,21 @@
+{
+  "name": "socket-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "db:reset": "cd database && ./reset_db.sh",
+    "start:dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.2.1",
+    "pgtools": "^0.3.0",
+    "sequelize": "^5.21.11",
+    "socket.io": "^2.3.0"
+  }
+}

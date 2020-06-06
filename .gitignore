@@ -1,0 +1,19 @@
+# Modules
+/node_modules
+/client/node_modules
+/server/node_modules
+
+# IDE
+.vscode
+
+# Production
+/build
+
+# Env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Credentials
+/server/database/db-configuration.json
