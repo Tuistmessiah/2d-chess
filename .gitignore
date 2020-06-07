@@ -8,6 +8,7 @@
 
 # Production
 /build
+/client/build
 
 # Env
 .env.local
