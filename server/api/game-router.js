@@ -35,8 +35,7 @@ router.post("/new", async (req, res, next) => {
     return res.status(500).json(errorJON(500, " - Code #P541"));
   }
   if (id) {
-    const newGame = response.content.rows[0];
-    return res.status(200).json(newGame);
+    return res.status(200).json(id);
   }
 
   return res.status(500).json(errorJON(500, " - Code #P213"));
