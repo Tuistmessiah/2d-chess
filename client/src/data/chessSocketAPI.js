@@ -1,8 +1,10 @@
 import socketIOClient from "socket.io-client";
-const ENDPOINT = "http://127.0.0.1:4001";
+import { logger } from "./utils";
+import auth from "./auth-api";
+const BASE_URL = auth.chessSocketAPI[auth.chessSocketAPI.mode];
 
-// const socket = socketIOClient(ENDPOINT);
+logger({ "chessSocketAPI URL": BASE_URL });
 
 export function newSocket() {
-  return socketIOClient(ENDPOINT);
+  return socketIOClient(BASE_URL);
 }

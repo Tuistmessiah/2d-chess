@@ -1,8 +1,9 @@
 import { logger } from "./utils";
-const BASE_URL = "http://localhost:4002";
+import auth from "./auth-api";
+const BASE_URL = auth.chessAPI[auth.chessAPI.mode];
 const GAME_ENTITY = "game";
 
-logger({ BASE_URL });
+logger({ "chessAPI URL": BASE_URL });
 
 // - API Endpoints
 

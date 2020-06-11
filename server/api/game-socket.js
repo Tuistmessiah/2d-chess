@@ -5,6 +5,7 @@ module.exports = gameSocket;
 
 // TODO: Make disconnect
 // TODO: Make validation in a function and call it every time
+// TODO: Make files for each 'on' event functions (and others)
 
 function gameSocket(socket, io) {
   console.info(`New client '${socket.id}' connected`);
@@ -48,6 +49,12 @@ function gameSocket(socket, io) {
       return;
     }
     return { type: "error", message: "Player with wrong credentials" };
+  });
+
+  socket.on("test", ({ dataTest, merde }) => {
+    console.log("Success", { dataTest, merde });
+    // merde(dataTest);
+    return "Success";
   });
 
   socket.on(

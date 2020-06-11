@@ -18,3 +18,4 @@
 
 # Credentials
 /server/database/db-configuration.json
+/client/src/data/auth-api.js

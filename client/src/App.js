@@ -21,6 +21,7 @@ export default function App() {
     console.log({ game });
     if (!game || (game && game.error)) {
       // TODO: Put up warning message in render
+      console.info("No game found!");
       return;
     }
     setLobbyStatus("game");
