@@ -4,6 +4,7 @@ import GameSession from "./components/GameSession";
 import CreateGame from "./CreateGame/CreateGame";
 
 import { findGame } from "./data/chessAPI";
+import Strategy from "./strategy.png";
 
 // TODO: List of public games screen
 // TODO: More components and organize folders
@@ -31,10 +32,7 @@ export default function App() {
     <div className="App">
       <div className="row" style={{ display: "inline" }}>
         <h1 style={{ display: "inline" }}>Socket Chess</h1>
-        <img
-          src={"./strategy.png"}
-          style={{ width: "10rem", marginLeft: "1rem" }}
-        />
+        <img src={Strategy} style={{ width: "10rem", marginLeft: "1rem" }} />
       </div>
 
       {/* Lobby Buttons */}
